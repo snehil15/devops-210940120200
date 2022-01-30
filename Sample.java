@@ -1,18 +1,15 @@
-//Write a java program to check whether a given number is even or odd?
-import java.util.Scanner;
-
 public class Sample {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number: ");
-		int num = sc.nextInt();
+		int num1 = 10;
+		int num2 = 20;
 		
-		if(num%2 == 0) {
-			System.out.println("Number is even");
-		}
-		else System.out.println("Number is odd");
-		sc.close();
+		System.out.println("Before swapping: num1 = "+num1+" num2 = "+num2);
+		
+		int temp = num1;
+		num1 = num2;
+		num2 = temp;
+		System.out.println("After swapping: num1 = "+num1+" num2 = "+num2);
 	}
 
 }
